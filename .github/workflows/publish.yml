@@ -31,6 +31,10 @@ jobs:
       - name: Publish
         shell: pwsh
         run: |
-          dotnet nuget push "artifacts/*.nupkg" `
+          $package = Get-ChildItem artifacts -Filter *.nupkg | Select-Object -First 1
+      
+          dotnet nuget push $package.FullName `
             --source https://api.nuget.org/v3/index.json `
-            --skip-duplicate
+            --skip-duplicate `
+            --interactive
+
