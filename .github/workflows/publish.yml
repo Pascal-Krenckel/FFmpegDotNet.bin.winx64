@@ -28,13 +28,16 @@ jobs:
           nuget pack FFmpegDotNet.bin.winx64/FFmpegDotNet.bin.winx64.nuspec `
             -OutputDirectory artifacts
 
+      - name: NuGet login (OIDC → temp API key)
+        uses: NuGet/login@v1
+        id: login
+        with:
+          user: Krenckel
+
       - name: Publish
         shell: pwsh
         run: |
-          $package = Get-ChildItem artifacts -Filter *.nupkg | Select-Object -First 1
-      
-          dotnet nuget push $package.FullName `
+          dotnet nuget push "artifacts/*.nupkg" `
+            --api-key ${{ steps.login.outputs.NUGET_API_KEY }} `
             --source https://api.nuget.org/v3/index.json `
-            --skip-duplicate `
-            --interactive
-
+            --skip-duplicate
