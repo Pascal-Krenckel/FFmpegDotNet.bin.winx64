@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>FFmpegDotNet.bin.winx64</id>
-    <version>8.1.2.5</version>
+    <version>8.1.2.6</version>
     <title>FFmpeg Binaries for Windows (x64)</title>
     <authors>Pascal Krenckel</authors>
     <owners>Pascal Krenckel</owners>
@@ -14,7 +14,7 @@
 		Latest Auto-Build (2026-09-01 13:13) by BtbN:
 		https://github.com/BtbN/FFmpeg-Builds/releases
 		Includes the executables as well as the shared libraries (DLLs) for Windows x64.
-		The libraries will be copied to ffmpeg\win-x64.
+		The libraries will be copied to ffmpeg\win-x64 the runtime native path has been removed to avoid multiple copies.
 	</releaseNotes>
     <description>
       This package contains the LGPL FFmpeg 8.1.2 "Hoare" binaries for Windows x64.
