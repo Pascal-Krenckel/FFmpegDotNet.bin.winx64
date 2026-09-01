@@ -30,10 +30,10 @@
     <!-- Native FFmpeg libraries -->
     <file
       src="ffmpeg\win-x64\**"
-      target="runtimes\win-x64\native\ffmpeg" />
+      target="ffmpeg\win-x64" />
 	  <file
       src="..\LICENSE.txt"
-      target="runtimes\win-x64\native\ffmpeg" />
+      target="ffmpeg\win-x64" />
 
     <!-- MSBuild integration for PackageReference -->
     <file
