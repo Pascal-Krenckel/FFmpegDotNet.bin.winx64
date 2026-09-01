@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Content Include="$(MSBuildThisFileDirectory)..\runtimes\win-x64\native\ffmpeg\*">
-      <Link>ffmpeg\%(Filename)%(Extension)</Link>
+    <None Include="$(MSBuildThisFileDirectory)..\runtimes\win-x64\native\ffmpeg\*" Condition="'$(PlatformTarget)' == 'x64' Or '$(PlatformTarget)' == 'AnyCPU' Or '$(PlatformTarget)' == ''">
+      <Link>ffmpeg\win-x64\%(Filename)%(Extension)</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Visible>false</Visible>
-    </Content>
+    </None>
   </ItemGroup>
 </Project>
