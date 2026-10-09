@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>FFmpegDotNet.bin.winx64</id>
-    <version>9.0.1.0</version>
+    <version>9.0.2.0</version>
     <title>FFmpeg Binaries for Windows (x64)</title>
     <authors>Pascal Krenckel</authors>
     <owners>Pascal Krenckel</owners>
@@ -11,12 +11,12 @@
     <license type="file">LICENSE.txt</license>
     <readme>README.md</readme>
     <releaseNotes>
-		Latest Auto-Build (2026-09-01 13:13) by BtbN:
+		Latest Auto-Build (2026-10-08 13:05) by BtbN:
 		https://github.com/BtbN/FFmpeg-Builds/releases
 		Includes the executables as well as the shared libraries (DLLs) for Windows x64.
 	</releaseNotes>
     <description>
-		This package contains the LGPL FFmpeg 9.0.1 "Lei" binaries for Windows x64.
+		This package contains the LGPL FFmpeg 9.0.2 "Lei" binaries for Windows x64.
 		Use this package with FFmpegDotNet if you do not want to provide the FFmpeg libraries yourself.
 		The package includes the FFmpeg executables for Windows x64.
 		The files will be copied to ./ffmpeg/win-x64/.

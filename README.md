@@ -9,7 +9,7 @@ It allows FFmpegDotNet to automatically include and manage the FFmpeg libraries 
 ---
 
 ## Version
-FFmpeg 9.0 "Lei"
+FFmpeg 9.0.2 "Lei"
 
 ## 📦 Installation
 
